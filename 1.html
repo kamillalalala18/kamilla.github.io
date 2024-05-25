@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+ <link rel="stylesheet" href="2.css">
+    <html>
+        <head>
+            <meta charset="UTF-8" />
+            <title>Резюме</title>
+        </head>        
+<body>
+  <div class="conteiner">
+    <div class="header">
+      <div class="photo">
+        <img src="https://umcrzngps.ru/wp-content/uploads/8/f/b/8fb56ccb66faca8b0113d1e66b8a2c08.jpeg" />
+      </div>
+      <div class="author">
+        <div class="info_box">
+    <p>Имя: <span id="name">Камилла</span></p>
+    <p>Фамилия: <span id="surname">Габдуллина</span></p>
+    <input type="text" id="newSurname" placeholder="Введите новую фамилию">
+    <button onclick="changeSurname()">Ввод</button>
+ <input type="text" id="newName" placeholder="Введите новое имя">
+ <button onclick="changeName()">Ввод</button>
+    <button onclick="changeBackgroundColor()">Изменить цвет фона</button>
+
+          <p>
+            <span>Ожидаемая должность: Балерина</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <script>
+      function changeSurname() {
+          var newSurname = document.getElementById("newSurname").value;
+          document.getElementById("surname").innerText = newSurname;
+      }
+function changeName() {
+          var newSurname = document.getElementById("newName").value;
+          document.getElementById("name").innerText = newSurname;
+      }
+
+      function changeBackgroundColor() {
+          var randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+          document.body.style.backgroundColor = randomColor;
+      }
+  </script>
+  </div>
+    <hr>
+    <div class="skills"></div>
+      <h3>Обо мне</h3>
+      <hr>
+      <p>
+        Танцовщица балета, элегантная и изящная художница, танцующая на парадном пуанте и великолепных пачках. Эта прекрасная профессия объединяет в себе искусство, страсть и высокую физическую подготовку. Основное предназначение балерины — олицетворять красоту и грацию на танцевальных сценах, пленяя зрителей своим превосходным мастерством.
+      </p>
+      <h3>Образование</h3>
+      <hr>
+      <p>
+        Хореографическое искусство в ВГИИК
+      <h3>Опыт работы</h3>
+      <hr>
+      <p>
+       Более 5 лет
+      </p>
+      <h3>Интересы</h3>
+      <hr>
+      <p>
+        Вкусно кушать, смотреть сериалы
+      </p>
+      <h3>Контакты</h3>
+      <hr>
+      <ul class="contacts">
+        <li>
+          <a href="mailto:contact@inbox.com">contact@inbox.com</a>
+        </li>
+        <li>
+        <a href="tel:+1234567890">+1234567890</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</body>
